@@ -222,6 +222,7 @@ th{
 }
 
 .btn_th{
+    width: 80px;
     position: relative;
     border: 1px solid #DF0404;
     background-color: rgba(255, 197, 197, 1);
@@ -230,8 +231,8 @@ th{
     color: #DF0404;
 }
 
-.btn_th:active,
 .btn_th-active{
+    width: 80px;
     border: 1px solid #00B087;
     background-color: rgba(22, 192, 152, 0.38);
     border-radius: 4px;

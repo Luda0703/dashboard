@@ -34,11 +34,24 @@ function open(evt) {
 //     })
 // })
 
-const button = document.querySelector('.btn_th');
+const btnTh = document.querySelectorAll(".btn_th");
 
-button.addEventListener('click', () => {
-  button.classList.toggle('btn_th-active');
-});
+btnTh.forEach(btnEl => {
+    btnEl.addEventListener('click', () => {
+        btnEl.classList.toggle('btn_th-active');
+        btnEl.textContent = btnEl.classList.contains('btn_th-active')
+        ? 'Active'
+        : 'Inactive';
+    })
+
+})
+
+
+// const button = document.querySelector('.btn_th');
+
+// button.addEventListener('click', () => {
+//   button.classList.toggle('btn_th-active');
+// });
 
 
 
