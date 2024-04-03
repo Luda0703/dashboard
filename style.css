@@ -38,13 +38,16 @@ html {
 
 .logo{
     margin-bottom: 50px;
+    position: relative;
 }
 
-sub{
-    font-style: 10px;
+span{
+    font-size: 10px;
     line-height: 15px;
     color: #838383;
-    justify-content: end;
+    position: absolute;
+    bottom: 8px;
+    right: 36px;
 }
 
 .dashboard{
@@ -68,6 +71,14 @@ sub{
     color: #9197B3;
 }
 
+.nav_link-active .nav_link_img{
+    fill: white;
+}
+
+.nav_link-active .nav_link_img--fill{
+    stroke: white;
+}
+
 .nav_link-active{
     background-color: #5932EA;
     color: #fff;
@@ -76,17 +87,23 @@ sub{
 
 .nav_link_img{
     margin-right: 20px;
-    stroke: #9197B3;
+    /* stroke: #9197B3; */
     fill: #9197B3;
 }
 
-.nav_link_img-active{
-    fill: white;
+.nav_link_img--fill{
+    margin-right: 20px;
+    stroke: #9197B3;
 }
 
 .nav_link_vector{
     position: absolute;
     right: 5px;
+    stroke: #9197B3;
+}
+
+.nav_link-active .nav_link_vector {
+    stroke: white;
 }
 
 .user_container{
@@ -205,6 +222,7 @@ th{
 }
 
 .btn_th{
+    position: relative;
     border: 1px solid #DF0404;
     background-color: rgba(255, 197, 197, 1);
     border-radius: 4px;
@@ -212,7 +230,8 @@ th{
     color: #DF0404;
 }
 
-.btn_th-activ{
+.btn_th:active,
+.btn_th-active{
     border: 1px solid #00B087;
     background-color: rgba(22, 192, 152, 0.38);
     border-radius: 4px;

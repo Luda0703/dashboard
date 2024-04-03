@@ -4,12 +4,12 @@ const navLink = document.querySelectorAll(".nav_link");
 const card = document.querySelectorAll(".card");
 
 navLink.forEach(function (element) {
-  element.addEventListener("click", active);
+  element.addEventListener("click", open);
 });
 
-function active(evt) {
+function open(evt) {
   const tabTarget = evt.currentTarget;
-  const button = tabTarget.dataset.button;
+  const a = tabTarget.dataset.a;
 
   navLink.forEach(function (item) {
     item.classList.remove("nav_link-active");
@@ -21,13 +21,27 @@ function active(evt) {
 
   tabTarget.classList.add("nav_link-active");
   document
-    .querySelector(`#${button}`)
+    .querySelector(`#${a}`)
     .classList.add("content-item--active");
 }
 
-const btnTh = document.querySelector(".btn_th");
+// const btnTh = document.querySelectorAll(".btn_th");
 
-btnTh.addEventListener("click", () => {
-    btnTh.classList.toggle("btn_th-activ");
+// btnTh.forEach(btnEl => {
+//     btnEl.addEventListener('click', () => {
+//         document.querySelector('.btn_th-active')?.classList.remove('btn_th-active');
+//         btnEl.classList.add('btn_th-active');
+//     })
+// })
+
+const button = document.querySelector('.btn_th');
+
+button.addEventListener('click', () => {
+  button.classList.toggle('btn_th-active');
 });
+
+
+
+
+
 
