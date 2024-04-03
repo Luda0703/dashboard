@@ -1,7 +1,8 @@
-'use strict'
+"use strict";
 
 const navLink = document.querySelectorAll(".nav_link");
 const card = document.querySelectorAll(".card");
+const btnTh = document.querySelectorAll(".btn_th");
 
 navLink.forEach(function (element) {
   element.addEventListener("click", open);
@@ -20,41 +21,14 @@ function open(evt) {
   });
 
   tabTarget.classList.add("nav_link-active");
-  document
-    .querySelector(`#${a}`)
-    .classList.add("content-item--active");
+  document.querySelector(`#${a}`).classList.add("content-item--active");
+
+  btnTh.forEach((btnEl) => {
+    btnEl.addEventListener("click", () => {
+      btnEl.classList.toggle("btn_th-active");
+      btnEl.textContent = btnEl.classList.contains("btn_th-active")
+        ? "Active"
+        : "Inactive";
+    });
+  });
 }
-
-// const btnTh = document.querySelectorAll(".btn_th");
-
-// btnTh.forEach(btnEl => {
-//     btnEl.addEventListener('click', () => {
-//         document.querySelector('.btn_th-active')?.classList.remove('btn_th-active');
-//         btnEl.classList.add('btn_th-active');
-//     })
-// })
-
-const btnTh = document.querySelectorAll(".btn_th");
-
-btnTh.forEach(btnEl => {
-    btnEl.addEventListener('click', () => {
-        btnEl.classList.toggle('btn_th-active');
-        btnEl.textContent = btnEl.classList.contains('btn_th-active')
-        ? 'Active'
-        : 'Inactive';
-    })
-
-})
-
-
-// const button = document.querySelector('.btn_th');
-
-// button.addEventListener('click', () => {
-//   button.classList.toggle('btn_th-active');
-// });
-
-
-
-
-
-
