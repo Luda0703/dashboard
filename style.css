@@ -31,7 +31,7 @@ html {
 }
 
 .aside_container{
-    width: 306px;
+    max-width: 306px;
     padding: 20px;
     background-color: #fff;
 }
@@ -111,18 +111,20 @@ sub{
 .container {
     display: flex;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #FAFBFF;
 }
 
 section{
+    width: 100%;;
     padding: 20px 50px;
     position: relative;
 }
 
 .card{
     margin-top: 50px;
-    width: 968px;
+    max-width: 968px;
     background-color: #fff;
     border-radius: 20px;
     padding: 30px;
@@ -163,7 +165,7 @@ label{
 }
 
 .card_input{
-    width: 216px;
+    max-width: 216px;
     border-radius: 10px;
     background-color: #F9FBFF;
     padding: 10px 10px 10px 40px;
@@ -180,7 +182,7 @@ label{
 }
 
 table{
-    width: 908px;
+    max-width: 908px;
     margin: 0 auto;
     text-align: left;
 }
