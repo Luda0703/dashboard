@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <aside class="aside_container">
+            <div class="logo">
+                <img  src="./images/logo.svg" alt="logo">
+                <sub >v.01</sub>
+            </div>
+            <img class="dashboard" src="./images/dashboard.svg" alt="dashboard">
+        <nav>
+            <ul class="nav_list">
+                <li class="nav_list_item">
+                    <a href="#" class="nav_link"> 
+                        <img class="nav_link_img" src="./images/product.svg" alt="product-logo">
+                        Product
+                        <img class="nav_link_vector" src="./images/vector.svg" alt="vectir">
+                    </a>
+                </li>
+                <li class="nav_list_item">
+                    <a href="#" class="nav_link"> 
+                        <img class="nav_link_img" src="./images/customers.svg" alt="customers-logo">
+                        Customers
+                        <img class="nav_link_vector" src="./images/vector.svg" alt="vectir">
+                    </a>
+                </li>
+                <li class="nav_list_item">
+                    <a href="#" class="nav_link">
+                        <img class="nav_link_img" src="./images/income.svg" alt="income-logo">
+                         Income
+                         <img class="nav_link_vector" src="./images/vector.svg" alt="vectir">
+                    </a>
+                </li>
+                <li class="nav_list_item">
+                    <a href="#" class="nav_link">
+                        <img class="nav_link_img" src="./images/promote.svg" alt="promote-logo">
+                        Promote
+                        <img class="nav_link_vector" src="./images/vector.svg" alt="vectir">
+                    </a>
+                </li>
+                <li class="nav_list_item">
+                    <a href="#" class="nav_link"> 
+                        <img class="nav_link_img" src="./images/help.svg" alt="help-logo">
+                        Help
+                        <img class="nav_link_vector" src="./images/vector.svg" alt="vectir">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="user_container">
+            <img src="./images/user.png" alt="user">
+            <div class="user">
+                <p class="user_name">Evano</p>
+                <p class="user_position">Project Manager</p>
+            </div>
+        </div>
+    </aside>
+
+    <section>
+            <img src="./images/hello.png" alt="hello">
+            <div class="card">
+                <div class="card_title">
+                    <div>
+                        <h1 class="title">All Customers</h1>
+                        <p class="card_text">Active Members</p>
+                    </div>
+                    <div>
+                        <input class="card_input" type="text" placeholder="Search">
+                    </div>
+                </div>
+
+                <table>
+                        <tr>
+                            <th class="table_header_text">Customer Name</th>
+                            <th class="table_header_text">Company</th>
+                            <th class="table_header_text">Phone Number</th>
+                            <th class="table_header_text">Email</th>
+                            <th class="table_header_text">Country</th>
+                            <th class="table_header_text">Status</th>
+                        </tr>
+                        <tr>
+                            <th>Jane Cooper</th>
+                            <th>Microsoft</th>
+                            <th>(225) 555-0118</th>
+                            <th>jane@microsoft.com</th>
+                            <th>United States</th>
+                            <th><button id="1" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Floyd Miles</th>
+                            <th>Yahoo</th>
+                            <th>(205) 555-0100</th>
+                            <th>floyd@yahoo.com</th>
+                            <th>Kiribati</th>
+                            <th><button id="2" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Ronald Richards</th>
+                            <th>Adobe</th>
+                            <th>(302) 555-0107</th>
+                            <th>ronald@adobe.com</th>
+                            <th>Israel</th>
+                            <th><button id="3" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Marvin McKinney</th>
+                            <th>Tesla</th>
+                            <th>(252) 555-0126</th>
+                            <th>marvin@tesla.com</th>
+                            <th>Iran</th>
+                            <th><button id="4" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Jerome Bell</th>
+                            <th>Google</th>
+                            <th>(629) 555-0129</th>
+                            <th>jerome@google.com</th>
+                            <th>Réunion</th>
+                            <th><button id="5" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Kathryn Murphy</th>
+                            <th>Microsoft</th>
+                            <th>(406) 555-0120</th>
+                            <th>kathryn@microsoft.com</th>
+                            <th>Curaçao</th>
+                            <th><button id="6" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Jacob Jones</th>
+                            <th>Yahoo</th>
+                            <th>(208) 555-0112</th>
+                            <th>jacob@yahoo.com</th>
+                            <th>Brazil</th>
+                            <th><button id="7" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                        <tr>
+                            <th>Kristin Watson</th>
+                            <th>Facebook</th>
+                            <th>(704) 555-0127</th>
+                            <th>kristin@facebook.com</th>
+                            <th>Åland Islands</th>
+                            <th><button id="8" class="btn_th" type="button">Inactive</button></th>
+                        </tr>
+                </table>
+
+            </div>
+    </section>
+</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

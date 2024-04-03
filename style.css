@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+}  
+
+.body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: 14px;
+    line-height: 21px;
+    color: #292D32;
+    
+}
+
+.aside_container{
+    width: 306px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo{
+    margin-bottom: 50px;
+}
+
+sub{
+    font-style: 10px;
+    line-height: 15px;
+    color: #838383;
+    justify-content: end;
+}
+
+.dashboard{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.nav_list{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.nav_link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #9197B3;
+}
+
+.nav_link-active{
+    background-color: #5932EA;
+    color: #fff;
+    border-radius: 8px;  
+}
+
+.nav_link_img{
+    margin-right: 20px;
+    stroke: #9197B3;
+    fill: #9197B3;
+}
+
+.nav_link_img-active{
+    fill: white;
+}
+
+.nav_link_vector{
+    position: absolute;
+    right: 5px;
+}
+
+.user_container{
+    margin-top: 500px;
+    display: flex;
+}
+
+.user{
+    margin-left: 10px;
+}
+
+.user_name{
+    margin-bottom: 5px;
+}
+
+.user_position{
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FAFBFF;
+}
+
+section{
+    padding: 20px 50px;
+    
+}
+
+.card{
+    margin-top: 50px;
+    width: 968px;
+    height: 812px;
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+
+.card_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000
+}
+
+.card_text{
+    color: #16C098;
+}
+
+.card_input{
+    width: 216px;
+    border-radius: 10px;
+    background-color: #F9FBFF;
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    outline: #B5B7C0;
+}
+
+table{
+    width: 968px;
+}
+
+tr{
+    border-bottom: 1px solid #EEEEEE;    
+}
+
+th{
+    padding: 15px 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #292D32;
+}
+
+.table_header_text{
+    color: #B5B7C0;
+}
+
+.btn_th{
+    border: 1px solid #DF0404;
+    background-color: rgba(255, 197, 197, 1);
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #DF0404;
+}
+
+.btn_th-activ{
+    border: 1px solid #00B087;
+    background-color: rgba(22, 192, 152, 0.38);
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #008767;
+}
