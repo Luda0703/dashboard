@@ -411,7 +411,6 @@ th {
 
 @media (max-width: 820px) {
   .user_container {
-    margin-top: 200px;
     width: 140px;
     justify-content: start;
     align-items: center;
@@ -552,7 +551,6 @@ th {
   }
 
   .user_container {
-    margin-top: 160px;
     width: 115px;
   }
 
@@ -634,6 +632,13 @@ th {
     margin-left: 5px;
     margin-bottom: 10px;
   }
+
+  /* .user_container {
+    margin-top: 300px;
+    width: 140px;
+    justify-content: start;
+    align-items: center;
+} */
 }
 
 @media (max-width: 500px) {
