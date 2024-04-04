@@ -23,12 +23,13 @@ function open(evt) {
   tabTarget.classList.add("nav_link-active");
   document.querySelector(`#${a}`).classList.add("content-item--active");
 
-  btnTh.forEach((btnEl) => {
-    btnEl.addEventListener("click", () => {
-      btnEl.classList.toggle("btn_th-active");
-      btnEl.textContent = btnEl.classList.contains("btn_th-active")
-        ? "Active"
-        : "Inactive";
-    });
-  });
 }
+
+btnTh.forEach((btnEl) => {
+  btnEl.addEventListener("click", () => {
+    btnEl.classList.toggle("btn_th-active");
+    btnEl.textContent = btnEl.classList.contains("btn_th-active")
+      ? "Active"
+      : "Inactive";
+  });
+});
